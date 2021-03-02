@@ -77,7 +77,12 @@ public class main {
 	      usuarios.removeIf(u -> u.getPontos() <= 200);
 			usuarios.forEach(System.out::println);
 			
-		
+			 System.out.println("[8]=====================");
+			 
+			 usuarios.stream()
+			 .filter(u -> u.getPontos() >300);
+			 usuarios.forEach(u -> u.setModerador(true));
+			 usuarios.forEach(System.out::println);
 
 	      
 			        
