@@ -37,7 +37,8 @@ public class main {
 		System.out.println("Filtro por Conceito e  Ano Nascimento:");
 		 candidatos.sort(Comparator.comparing(Candidato::getAnoNascimento)
 				 .thenComparing(Candidato::getConceito)
-	                .thenComparing(Candidato::getRendaMensal));
+	        //        .thenComparing(Candidato::getRendaMensal)
+	                );
 
 	        candidatos.forEach(System.out::println);
 	        	        
@@ -45,7 +46,7 @@ public class main {
 	        
 		        System.out.println("Filtro por Ano Nascimento e  Renda Mensal:");
 				 candidatos.sort(Comparator.comparing(Candidato::getRendaMensal)
-			                .thenComparing(Candidato::getConceito )
+			             //   .thenComparing(Candidato::getConceito )
 			                .thenComparing(Candidato::getAnoNascimento));
 
 			        candidatos.forEach(System.out::println);
